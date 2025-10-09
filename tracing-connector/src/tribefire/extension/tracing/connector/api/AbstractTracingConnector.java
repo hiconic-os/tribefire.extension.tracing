@@ -39,7 +39,7 @@ import com.braintribe.cfg.Required;
 import com.braintribe.codec.marshaller.api.GmSerializationOptions;
 import com.braintribe.codec.marshaller.api.Marshaller;
 import com.braintribe.codec.marshaller.api.OutputPrettiness;
-import com.braintribe.codec.marshaller.json.JsonMarshaller;
+import com.braintribe.codec.marshaller.json.JsonStreamMarshaller;
 import com.braintribe.common.attribute.common.UserInfoAttribute;
 import com.braintribe.common.attribute.common.impl.BasicUserInfo;
 import com.braintribe.common.lcd.Pair;
@@ -124,7 +124,7 @@ public abstract class AbstractTracingConnector implements TracingConnector, Life
 			hostAddressIPv6 = iPv6NetworkInterface.getHostAddress();
 		}
 
-		marshaller = new JsonMarshaller();
+		marshaller = new JsonStreamMarshaller();
 
 		//@formatter:off
 		serializationOptions = GmSerializationOptions.defaultOptions.derive()

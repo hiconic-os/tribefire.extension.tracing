@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="UTF-8"?><!--
 Copyright BRAINTRIBE TECHNOLOGY GMBH, Austria, 2002-2022
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,8 +21,7 @@ limitations under the License.
     </parent>
     <artifactId>tracing-api</artifactId>
     <version>3.0.1</version>
-    <properties>
-    </properties>
+    <properties/>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -39,6 +38,12 @@ limitations under the License.
             <version>${V.com.braintribe.gm}</version>
         </dependency>
         <dependency>
+            <groupId>com.braintribe.gm</groupId>
+            <artifactId>notification-model</artifactId>
+            <version>${V.com.braintribe.gm}</version>
+            <?tag asset ?>
+        </dependency>
+        <dependency>
             <groupId>tribefire.cortex</groupId>
             <artifactId>check-api</artifactId>
             <version>${V.tribefire.cortex}</version>
@@ -51,30 +56,30 @@ limitations under the License.
         </dependency>
         <!-- external libraries -->
         <dependency>
-		    <groupId>io.opentelemetry</groupId>
-		    <artifactId>opentelemetry-api</artifactId>
-		    <version>${V.io.opentelemetry}</version>
-		</dependency>
-		<dependency>
-		    <groupId>io.opentelemetry</groupId>
-		    <artifactId>opentelemetry-api-logs</artifactId>
-		    <version>${V.io.opentelemetry.alpha}</version>
-		</dependency>
-		<dependency>
-		    <groupId>io.opentelemetry</groupId>
-		    <artifactId>opentelemetry-sdk-logs</artifactId>
-		    <version>${V.io.opentelemetry.alpha}</version>
-		</dependency>
-		<dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-api</artifactId>
+            <version>${V.io.opentelemetry}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-api-logs</artifactId>
+            <version>${V.io.opentelemetry.alpha}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-sdk-logs</artifactId>
+            <version>${V.io.opentelemetry.alpha}</version>
+        </dependency>
+        <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-semconv</artifactId>
             <version>${V.io.opentelemetry.alpha}</version>
         </dependency>
         <!-- This is needed to be able to extract the recorded spans -->
         <dependency>
-		    <groupId>io.opentelemetry</groupId>
-		    <artifactId>opentelemetry-sdk-testing</artifactId>
-		    <version>${V.io.opentelemetry}</version>
-		</dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-sdk-testing</artifactId>
+            <version>${V.io.opentelemetry}</version>
+        </dependency>
     </dependencies>
 </project>

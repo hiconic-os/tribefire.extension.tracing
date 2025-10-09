@@ -32,6 +32,12 @@ limitations under the License.
         </license>
     </licenses>
     <dependencies>
+        <dependency>
+            <groupId>com.braintribe.gm</groupId>
+            <artifactId>notification-model</artifactId>
+            <version>${V.com.braintribe.gm}</version>
+            <?tag asset ?>
+        </dependency>
         <!-- TRACING related -->
         <dependency>
             <groupId>tribefire.extension.tracing</groupId>
@@ -41,20 +47,22 @@ limitations under the License.
         </dependency>
         <!-- TRIBEFIRE related -->
         <dependency>
-            <groupId>com.braintribe.gm</groupId>
+            <groupId>tribefire.cortex</groupId>
             <artifactId>extension-deployment-model</artifactId>
-            <version>${V.com.braintribe.gm}</version>
+            <version>${V.tribefire.cortex}</version>
             <?tag asset?>
         </dependency>
         <dependency>
             <groupId>com.braintribe.gm</groupId>
             <artifactId>logging-model</artifactId>
             <version>${V.com.braintribe.gm}</version>
+            <?tag asset?>
         </dependency>
         <dependency>
             <groupId>tribefire.cortex</groupId>
             <artifactId>connector-deployment-model</artifactId>
             <version>${V.tribefire.cortex}</version>
+            <?tag asset?>
         </dependency>
     </dependencies>
 </project>

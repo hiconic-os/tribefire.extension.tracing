@@ -15,9 +15,20 @@
 // ============================================================================
 package tribefire.extension.tracing.model.deployment.service;
 
-public enum CustomValueAttribute {
+import com.braintribe.model.generic.base.EnumBase;
+import com.braintribe.model.generic.reflection.EnumType;
+import com.braintribe.model.generic.reflection.EnumTypes;
+
+public enum CustomValueAttribute implements EnumBase<CustomValueAttribute> {
 	ATTRIBUTE_COMPONENT_NAME("BEFORE"),
 	ATTRIBUTE_TENANT("BEFORE");
+
+	public static final EnumType<CustomValueAttribute> T = EnumTypes.T(CustomValueAttribute.class);
+	
+	@Override
+	public EnumType<CustomValueAttribute> type() {
+		return T;
+	}	
 
 	// -----------------------------------------------------------------------
 

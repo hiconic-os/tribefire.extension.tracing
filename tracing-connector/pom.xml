@@ -55,9 +55,9 @@ limitations under the License.
 			<version>${V.com.braintribe.gm}</version>
 		</dependency>
         <dependency>
-            <groupId>com.braintribe.networktools</groupId>
+            <groupId>com.braintribe.common</groupId>
             <artifactId>network-tools</artifactId>
-            <version>${V.com.braintribe.networktools}</version>
+            <version>${V.com.braintribe.common}</version>
         </dependency>
         <!-- TRACING related -->
         <dependency>
